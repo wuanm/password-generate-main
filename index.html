@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="imagenes/candado.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/61660199b2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Gerador de contraseñas</title>
+
+
+<
+<body>
+</head>
+<div class="contenedor">
+    <header class="header"><h1>Password Generator</h1></header>
+    <div class="copia"></div>
+
+    <div class="pantalla"> </div>
+    <span><i id="copy" class="fa-thin fa-copy"></i></span> 
+
+    <main class="main">
+        <div class="largo">Password length</div>
+        <input type="number" min="5" max="20" class="checador" id="espacio" value="5" >
+        <div class="letra">Include uppercarse letters</div>
+        <input type="checkbox" id="le"  class="checador" name="checbox" value=" mayusculas">
+        <div class="minuscula">Include lowercarse letters</div>
+        <input type="checkbox" id="min" class="checador" name="checbox" value="minisculas">
+        <div class="numero">include numbers</div>
+        <input type="checkbox" id="nu" class="checador"  name="checbox" value="numero">
+        <div class="simbolos">Include symbols</div>
+        <input type="checkbox" id="simb" class="checador" name="checbox" value="simbolos">
+        <button class="boton">Generate pass</button>
+        <button class="borrar">Reset</button>
+    </main>
+
+
+<div class="attribution">
+    Challenge by <a href="#" target="_blank">Juanma Mentor</a>. 
+    Coded by <a href="#">Juanma</a>.
+  </div>
+
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+
+    *{
+        border: 0;
+        box-sizing: border-box;
+    }
+    body,html{
+        width: 95%;
+        height: 100vh;
+        background-color: #008080;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .contenedor{
+        border: 1px groove black;
+        border-radius: 10px;
+        box-shadow: -2px -2px 5px black;
+        width: 90%;
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        min-height: 460px;
+        background-color: #80deea;
+    }
+
+.header{
+  
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    min-height:30px ;
+    font-size: 15px;
+    padding: -55px;
+   min-height: 30px;
+}
+.pantalla{
+    display: grid;
+   grid-template-columns: repeat(1,1fr);
+   grid-gap: 10px;
+   grid-template-rows: minmax(30px,50px);
+   border: 1px solid black;
+   justify-items:start;
+   align-items: center;
+   background-color: #151537;
+   width: 90%;
+   margin: 0 auto;
+   font-size:20px;
+   color: white;
+   border-radius: 10px;
+   border: 2px groove gray;
+    
+}
+span i{
+    position:relative;
+    border: 1px groove white;
+    top: -35px;
+    right: -310px;
+}
+.main{
+    display: grid;
+    grid-template-columns: 270px 50px;
+    grid-gap: 10px;
+    grid-template-rows: repeat(6,30px);
+    align-items: center;
+    font-size: 20px;
+    min-width: 95%;
+    margin: 10px auto;
+   
+ 
+}
+input{
+   margin-right: -20px;
+  
+}
+#espacio{
+    width: 40px;
+    margin-left: 5px;
+}
+.boton{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 6;
+    font-size: 25px;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.boton:focus{
+    background-color: aqua;
+}
+.boton:hover{
+    box-shadow: 10px 10px 10px black ;
+}
+.borrar{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 7;
+    height: auto;
+    font-size: 20px;
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+    cursor: pointer;
+}
+
+.borrar:hover{
+    box-shadow: 10px 10px 10px black ;
+}
+.attribution{
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+/*tamaño  mobil*/
+@media all and (max-width:400px) {
+    span i{
+        position:relative;
+        border: 1px groove white;
+        top: -35px;
+        right: -290px;
+       
+    }
+    .main,input,.boton,.borrar{
+        width: 90%;
+       
+    }
+    #espacio{
+        margin-left: -5px;
+    }
+    .borrar{
+       width: 80%;
+       margin-left: 20px;
+    }
+    
+}
