@@ -68,13 +68,13 @@ copiar.addEventListener("click",function (){
 })
 
 /**aqui sabemos que numero de largo de la clabe se escojio */
-tamclave.addEventListener("click",function(){
+tamclave.addEventListener("blur",function(){
    valorTamClave=tamclave.value
 });
 
 
 /**botonon generar y envia la operación a la pantalla */
-genera.addEventListener("blur",function(){
+genera.addEventListener("click",function(){
    codigosAleatorios(valorTamClave,may,minus,num,sign)
       
       
