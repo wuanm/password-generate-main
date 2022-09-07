@@ -74,7 +74,7 @@ tamclave.addEventListener("click",function(){
 
 
 /**botonon generar y envia la operación a la pantalla */
-genera.addEventListener("click",function(){
+genera.addEventListener("blur",function(){
    codigosAleatorios(valorTamClave,may,minus,num,sign)
       
       
